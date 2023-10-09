@@ -115,13 +115,58 @@ opacity: 0;
 .ex-10-icon {
     font-size: 60px;
 }
-
-.ex-10-icon{
-    
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg); /* Angolo di partenza */
+    }
+    100% {
+        transform: rotate(360deg); /* Angolo di fine (una rotazione completa) */
+    }
 }
+
+.ex-10-icon {
+    animation: rotate 5s linear infinite; /* Applica l'animazione "rotate" in modo continuo */
+}
+
+
+    
+
+
 .ex-11-icon {
     font-size: 60px;
 }
+
+@keyframes rotate-11 {
+    0% {
+        transform: rotate(0deg); 
+    }
+    75% {
+        transform: rotate(270deg); 
+    }
+    100% {
+        transform: rotate(0deg); 
+    }
+}
+
+.ex-11-icon {
+    font-size: 60px;
+    animation: rotate-11 6s linear; 
+}
+
+.ex-11-icon:hover {
+    animation: rotate-11 6s linear infinite; 
+}
+
+
+
+
+
+
+
+
+
+
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
